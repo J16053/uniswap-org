@@ -3,7 +3,7 @@ title: Common Errors
 tags: smart-contracts, documentation
 ---
 
-This document covers a few error codes freqeuently encountered while building on Uniswap V2.
+This document covers a few error codes frequently encountered while building on Uniswap V2.
 
 # UniswapV2: K
 
@@ -95,7 +95,7 @@ This is potentially a ganache bug encountered when working on flash swaps. We ha
 
 There are rare circumstances where users are unable to approve a token on the Uniswap front end. 
 
-This is a result of some token contracts taking steps to defend against malicious contracts that attempt to front run approvals and steal a users tokens. It happens only when the user is trying to increase an approval allowance from a preallocated amount to a larger one, and only happens with a few token contracts.
+This is a result of some token contracts taking steps to defend against malicious contracts that attempt to front run approvals and steal a user's tokens. It happens only when the user is trying to increase an approval allowance from a preallocated amount to a larger one, and only happens with a few token contracts.
 
-The solution is have the user manually set the router contract approval amount to zero, then to the number they want. The easiest way to do this is through Etherscan. 
+The solution is to have the user manually set the router contract approval amount to zero, then to the number they want. The easiest way to do this is through Etherscan. 
 
